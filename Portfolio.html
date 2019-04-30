@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<style>
+body {margin: 0;
+}
+article{
+float:left;
+width:35%;
+}
+aside{
+float:right;
+width:80%;
+}
+section:after{
+content:"";
+display:table;
+clear:both;
+}
+ul.topnav li {   
+	display: inline-block;
+    list-style-type: none;
+}
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.topnav li a:hover{
+ text-decoration:underline;
+ }
+ul.topnav li a.active 
+ul.topnav li.right {float: right;}
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #FFFFFF;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  text-decoration:underline;
+  
+}
+
+.sidebar a:hover{
+ text-decoration:underline;
+ }
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.imgCustom {
+	width: 50%;
+}
+</style>
+</head>
+<body>
+<div style="font-family:Courier">
+<ul class="topnav" style="text-align: center;">
+  <li><a href="Portfolio.html">Portfolio</a></li>
+  <li class="right"><a href="https://github.com/FS1024Wu" target="_blank" title="some school works he did ">Github</a></li>
+</ul>
+<article>
+ <h3 class="logo"><b onclick="window.open('Portfolio.html','_self')">___________ </b></h3>
+<div class="sidebar">
+  <a href="Resume.html">Resume</a>
+  <a href="Hobbies.html">Hobbies</a>
+</div>
+</div>
+</article>
+<table>
+<tr>
+<td><img class="imgCustom" src="1.jpg" ><br>
+<p style="font-family:Courier"><b>______________________________________________FangSheng Wu <b/></p>
+</td>
+</tr>
+<tr>
+<td>
+<p style="font-family:Courier"><b>	He is a computer science undergraduate student at Georgia State University. <br>
+He is about to graduate, and seeking a long term career as Java Developer. <br> He also interests in data science and big data.
+<b/></p>
+</td>
+</tr>
+</table>
+</body>
+</html>
